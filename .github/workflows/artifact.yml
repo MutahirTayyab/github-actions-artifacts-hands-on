@@ -28,7 +28,8 @@ jobs:
     -  name: Download Hello World Text File
        uses: actions/download-artifact@v4
        with:
-        name: ./artifacts/hello.txt
+        name: hello-artifact
+        path: ./artifacts
 
     -  name: Display content of the text file
        run: cat ./artifacts/hello.txt
